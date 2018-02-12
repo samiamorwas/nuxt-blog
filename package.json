@@ -5,7 +5,7 @@
   "author": "Max Haarhaus <samiamorwas@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "concurrently \"yarn nuxt\" \"yarn prettier-watch\"",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
@@ -26,8 +26,13 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
     "husky": "^0.14.3",
+    "node-sass": "^4.7.2",
     "onchange": "^3.3.0",
     "prettier": "^1.10.2",
-    "pretty-quick": "^1.4.1"
+    "pretty-quick": "^1.4.1",
+    "sass-loader": "^6.0.6",
+    "stylelint": "^8.4.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-scss": "^2.3.0"
   }
 }
